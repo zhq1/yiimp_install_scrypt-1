@@ -44,6 +44,10 @@ displayErr() {
     
     
     # update package and upgrade Ubuntu
+    sudo apt-get update --fix-missing
+    sudo apt-get autoremove 
+    sudo apt-get clean 
+    sudo apt-get install -f
     sudo apt-get -y update 
     sudo apt-get -y dist-upgrade
     sudo apt-get -y upgrade
