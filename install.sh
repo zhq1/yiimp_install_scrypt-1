@@ -45,8 +45,7 @@ displayErr() {
     
     # update package and upgrade Ubuntu
     sudo apt-get -y autoremove git
-    sudo apt-get -y update 
-    sudo apt-get -y dist-upgrade
+    sudo apt-get -y update
     sudo apt-get -y upgrade
     
     output " "
